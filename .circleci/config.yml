@@ -113,7 +113,7 @@ jobs:
         docker push cbcrg/tcoffee:$version;
         fi
 workflows:
-  build_and_test:
+  build_test_publish:
     jobs:
       - build
       - test
